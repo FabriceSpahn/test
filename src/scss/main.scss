@@ -1,0 +1,263 @@
+//import scss file
+@import "./gradient-text.scss";
+@import "./typography.scss";
+@import "./button.scss";
+
+
+.test {
+  height: 900px;
+}
+
+//You can write css or scss
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  // font-family: "Poppins", sans-serif;
+  font-family: 'Gothic A1', sans-serif;
+  line-height: 1.5;
+  background-color: white;
+  color: black;
+  text-align: center;
+
+
+  animation: fadeIn 750ms cubic-bezier(.64, .07, 1, .86);
+  -webkit-animation: fadeIn 750ms cubic-bezier(.64, .07, 1, .86);
+  -moz-animation: fadeIn 750ms cubic-bezier(.64, .07, 1, .86);
+  -o-animation: fadeIn 750ms cubic-bezier(.64, .07, 1, .86);
+  -ms-animation: fadeIn 750ms cubic-bezier(.64, .07, 1, .86);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+.header {
+  position: absolute;
+  top: 24px;
+  width: 96%;
+  // background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+
+  .logo {
+    display: flex;
+
+   #SVG-Logo{
+      // position: relative;
+      // display: flex;
+      // position: relative;
+      height: 28px;
+    }
+
+    h1 {
+      font-family: 'Gothic A1', sans-serif;
+      font-weight: 500;
+    }
+  }
+
+  .contact {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    .mail-text {
+      // background-color: #dddddd;
+      display: flex;
+      gap: 8px;
+      height: max-content;
+      border-radius: 100px;
+
+      span {
+        font-size: 16px;
+        display: inline;
+        color: #7b7b7b;
+      }
+
+      p {
+        font-size: 16px;
+        display: inline;
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    width: 90%;
+    display: inline;
+
+    .logo {
+      padding-bottom: 16px;
+    }
+
+    .contact {
+      .mail-text {
+        text-align: left;
+        display: inline;
+      }
+    }
+  }
+}
+
+.pop-ups {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  #one {
+    position: relative;
+    padding: 24px;
+    background-color: #33658A;
+    transform: rotate(-8deg);
+    color: white;
+    border-radius: 16px;
+    text-align: left;
+  }
+
+  #second {
+    position: relative;
+    padding: 24px;
+    background-color: #FFB30F;
+    transform: rotate(10deg);
+    border-radius: 16px;
+    text-align: left;
+  }
+
+  #third {
+    position: relative;
+    padding: 24px;
+    background-color: #FD151B;
+    transform: rotate(-5deg);
+    border-radius: 16px;
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #one {
+    overflow: auto;
+    height: 340px;
+    width: 320px;
+  }
+
+  #second {
+    overflow: auto;
+    height: 340px;
+    width: 320px;
+  }
+
+  #third {
+    overflow: auto;
+    height: 340px;
+    width: 320px;
+  }
+}
+
+.button-list {
+  position: absolute;
+  bottom: 24px;
+  width: 96%;
+  // background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .button-list {
+    width: 90%;
+  }
+}
+
+
+
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  img {
+    width: 300px;
+  }
+}
+
+
+
+
+.background-image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  .lottie {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .background-image {
+    .lottie {
+      width: 220px;
+      height: 220px;
+    }
+  }
+}
